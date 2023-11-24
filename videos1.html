@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Videos</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            overflow: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        /* Video Grid */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        /* Video Card Styles */
+        .video-card {
+            background-color: whitesmoke;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .video-card:hover {
+            transform: scale(1.05);
+        }
+
+        .video-card h3 {
+            border-bottom: 1px solid;
+            margin: 0 0 8px 0;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+        }
+
+        .video-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-description {
+            margin: 12px 0 0 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Videos</h1>
+    </header>
+
+    <!-- Video Grid -->
+    <div class="video-grid">
+
+        <!-- Video 1 -->
+        <div class="video-card" onclick="playVideo('video1', this)">
+            <h3>Ishan Sharma - My cut</h3>
+            <div class="video-container">
+                <iframe class="video-iframe" id="video1" src="https://www.youtube.com/embed/DLLQNz19jKE" title="Video 1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card" onclick="playVideo('video2', this)">
+            <h3>Short - Form video using hooks and hangers</h3>
+            <div class="video-container">
+                <iframe class="video-iframe" id="video2" src="https://www.youtube.com/embed/kBTlgFnn2bk" title="Video 2" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-card" onclick="playVideo('video3', this)">
+            <h3>Jasti - My cut</h3>
+            <div class="video-container">
+                <iframe class="video-iframe" id="video3" src="https://www.youtube.com/embed/CG6bEECuTTI" title="Video 3" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+           
+        </div>
+
+        <!-- Video 4 -->
+        <div class="video-card" onclick="playVideo('video4', this)">
+            <h3>Edit with dynamic transition and effects</h3>
+            <div class="video-container">
+                <iframe class="video-iframe" id="video4" src="https://www.youtube.com/embed/626xODfK9kA" title="Video 4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+           
+        </div>
+        <div class="video-card" onclick="playVideo('video4', this)">
+            <h3>Aesthetic video edit</h3>
+            <div class="video-container">
+                <iframe class="video-iframe" id="video5" src="https://www.youtube.com/embed/NwGzdxuYVWg" title="Video 4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+           
+        </div>
+        <div class="video-card" onclick="playVideo('video4', this)">
+            <h3>AI voice over ediy</h3>
+            <div class="video-container">
+                <iframe class="video-iframe" id="video4" src="https://www.youtube.com/embed/8ZX7ewlxZTk" title="Video 4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+           
+        </div>
+       
+    </div>
+
+    <script>
+        let currentlyPlaying;
+
+        function playVideo(videoId, card) {
+            if (currentlyPlaying) {
+                currentlyPlaying.pause();
+            }
+
+            const video = document.getElementById(videoId);
+            video.play();
+            currentlyPlaying = video;
+
+            // Optionally, add styles to indicate the currently playing video card
+            resetVideoCardStyles();
+            card.style.border = '2px solid #3498db';
+        }
+
+        function resetVideoCardStyles() {
+            const videoCards = document.querySelectorAll('.video-card');
+            videoCards.forEach(card => {
+                card.style.border = 'none';
+            });
+        }
+    </script>
+
+</body>
+</html>
