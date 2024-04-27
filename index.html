@@ -1,21 +1,65 @@
-<!--
-// v0 by Vercel.
-// https://v0.dev/t/wCmmYyxdHMu
--->
+<!DOCTYPE html>
+<html lang="en">
 
-<style>h1, h2, h3, h4, h5, h6 { font-family: 'Chivo', sans-serif; --font-sans: 'Chivo'; }
-</style>
-<style>body { font-family: 'Arimo', sans-serif; --font-sans: 'Arimo'; }
-</style>
-<div class="bg-white dark:bg-gray-950">
-  <section class="w-full py-6 md:py-12">
-    <div class="container flex items-center justify-center gap-4 px-4 text-center md:gap-6 md:px-6">
-      <div class="space-y-2">
-        <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Yashwanth</h1>
-        <p class="text-gray-500 md:text-xl/relaxed dark:text-gray-400">Video Editing Professional</p>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yashwanth</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Bingi Yashwanth</h1>
+
+          <p class="title">Developer / Video Editor</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
       </div>
 
-      <div class="sidebar-info_mor>
+      <div class="sidebar-info_more">
 
         <div class="separator"></div>
 
@@ -83,20 +127,15 @@
 
         <ul class="social-list">
 
+          
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
+            <a href="https://twitter.com/Neveryash" class="social-link">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
+            <a href="https://www.instagram.com/the_neveryash/" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
@@ -133,9 +172,9 @@
             <button class="navbar-link" data-nav-link>Resume</button>
           </li>
 
-          <!-- <li class="navbar-item">
+          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li> -->
+          </li>
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Blog</button>
@@ -165,9 +204,9 @@
 
         <section class="about-text">
           <p>
-            As a passionate video editor with 3 years of experience, 
-            I have honed my skills and developed a keen eye for visual storytelling. 
-            I am now in the process of building a video editing agency to share my expertise with a wider audience.
+            I'm UG Student 
+            I enjoy
+            Solving Problems
           </p>
 
           <p>
@@ -194,10 +233,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Vidoe Editing</h4>
+                <h4 class="h4 service-item-title">Web design</h4>
 
                 <p class="service-item-text">
-                  Transforming Raw Footage into Captivating Visuals.
+                  The most modern and high-quality design made at a professional level.
                 </p>
               </div>
 
@@ -209,7 +248,31 @@
                 <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
               </div>
 
-             
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
 
             <li class="service-item">
 
@@ -218,10 +281,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Cinematography</h4>
+                <h4 class="h4 service-item-title">Photography</h4>
 
                 <p class="service-item-text">
-                  I love making cenematic video that look like film.
+                  I make high-quality photos of any category at a professional level.
                 </p>
               </div>
 
@@ -233,7 +296,111 @@
 
 
         <!--
-       /
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
 
         <div class="modal-container" data-modal-container>
 
@@ -272,11 +439,12 @@
             </div>
 
           </section>
-
         </div>
 
+       
 
-        
+
+        <!--
           - clients
         -->
 
@@ -356,30 +524,44 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">BITS Warangal</h4>
+              <h4 class="h4 timeline-item-title">University school of the arts</h4>
 
-              <span>2021 — 2024</span>
+              <span>2007 — 2008</span>
 
               <p class="timeline-text">
-                
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">GPT Parkal</h4>
+              <h4 class="h4 timeline-item-title">New york academy of art</h4>
 
-              <span>2018 — 2021</span>
+              <span>2006 — 2007</span>
 
               <p class="timeline-text">
-                <!-- Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis.. -->
+                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
+                omnis..
               </p>
 
             </li>
 
-        
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+
+              <span>2002 — 2004</span>
+
+              <p class="timeline-text">
+                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
+                magni dolores
+                eos.
+              </p>
+
+            </li>
 
           </ol>
 
@@ -452,8 +634,8 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Video Editing</h5>
-                <data value="80">90%</data>
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
               </div>
 
               <div class="skill-progress-bg">
@@ -491,8 +673,8 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Cinematography</h5>
-                <data value="50">70%</data>
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
               </div>
 
               <div class="skill-progress-bg">
@@ -530,14 +712,17 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Video Editing</button>
+              <button data-filter-btn>Web design</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Cinematography</button>
+              <button data-filter-btn>Applications</button>
             </li>
 
-           
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
           </ul>
 
           <div class="filter-select-box">
@@ -559,7 +744,7 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Video Editing</button>
+                <button data-select-item>Web design</button>
               </li>
 
               <li class="select-item">
@@ -984,140 +1169,25 @@
       </article>
 
     </div>
-  </section>
-  <section class="w-full pb-12 lg:pb-24">
-    <div class="container grid items-center justify-center gap-4 px-4 text-center md:gap-10 lg:gap-16 xl:grid-cols-3 xl:justify-start xl:text-left xl:gap-20">
-      <div class="space-y-4 xl:col-span-2">
-        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">Featured Projects</h2>
-        <p class="text-gray-500 md:text-xl/relaxed dark:text-gray-400">
-          Check out some of my best video editing work.
-        </p>
-      </div>
-      <div class="grid w-full grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
-        <div class="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-          <img
-            src="/placeholder.svg"
-            alt="Video Thumbnail"
-            width="600"
-            height="400"
-            class="aspect-[3/2] overflow-hidden rounded-xl object-contain object-center"
-          />
-        </div>
-        <div class="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-          <img
-            src="/placeholder.svg"
-            alt="Video Thumbnail"
-            width="600"
-            height="400"
-            class="aspect-[3/2] overflow-hidden rounded-xl object-contain object-center"
-          />
-        </div>
-        <div class="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-          <img
-            src="/placeholder.svg"
-            alt="Video Thumbnail"
-            width="600"
-            height="400"
-            class="aspect-[3/2] overflow-hidden rounded-xl object-contain object-center"
-          />
-        </div>
-        <div class="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
-          <img
-            src="/placeholder.svg"
-            alt="Video Thumbnail"
-            width="600"
-            height="400"
-            class="aspect-[3/2] overflow-hidden rounded-xl object-contain object-center"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="w-full py-12 md:py-24">
-    <div class="container grid items-center justify-center gap-4 px-4 text-center md:grid-cols-2 md:gap-10 md:px-6 lg:gap-16">
-      <div class="space-y-4">
-        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">About Me</h2>
-        <p class="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed dark:text-gray-400">
-          I'm a passionate video editor with a keen eye for detail. I specialize in creating stunning visual stories
-          that captivate audiences. Whether it's a short film, a music video, or a promotional clip, I bring
-          creativity and expertise to every project.
-        </p>
-      </div>
-      <div class="mx-auto flex w-full items-center justify-center p-8">
-        <img
-          src="/placeholder.svg"
-          alt="Yashwanth"
-          width="400"
-          height="400"
-          class="rounded-full"
-          style="aspect-ratio:400/400;object-fit:cover"
-        />
-      </div>
-    </div>
-  </section>
-  <section class="w-full py-12 md:py-24">
-    <div class="container grid items-center justify-center gap-4 px-4 text-center md:grid-cols-2 md:gap-10 md:px-6 lg:gap-16">
-      <div class="space-y-4">
-        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">My Services</h2>
-        <p class="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed dark:text-gray-400">
-          Let me bring your vision to life. I offer professional video editing services for a variety of content,
-          including:
-        </p>
-        <ul class="mx-auto max-w-[700px] grid gap-4 md:gap-6 list-disc text-gray-500 md:text-xl/relaxed dark:text-gray-400">
-          <li>Music Videos</li>
-          <li>Vlogs</li>
-          <li>Short Films</li>
-          <li>Corporate Videos</li>
-          <li>Social Media Content</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="w-full py-12 md:py-24">
-    <div class="container grid items-center justify-center gap-4 px-4 text-center md:gap-10 md:px-6">
-      <div class="space-y-4">
-        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">Get in Touch</h2>
-        <p class="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed dark:text-gray-400">
-          Ready to take your videos to the next level? Contact me to discuss your project.
-        </p>
-      </div>
-      <div class="mx-auto max-w-[400px] space-y-4">
-        <div class="grid grid-cols-2 gap-4">
-          <label for="name" class="text-sm font-medium tracking-tighter flex items-center space-x-2">
-            <span>Name</span>
-          </label>
-          <input
-            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-            id="name"
-            placeholder="Enter your name"
-          />
-        </div>
-        <div class="grid grid-cols-2 gap-4">
-          <label for="email" class="text-sm font-medium tracking-tighter flex items-center space-x-2">
-            <span>Email</span>
-          </label>
-          <input
-            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-            type="email"
-            id="email"
-            placeholder="Enter your email"
-          />
-        </div>
-        <div class="grid grid-cols-2 gap-4">
-          <label for="message" class="text-sm font-medium tracking-tighter flex items-center space-x-2">
-            <span>Message</span>
-          </label>
-          <textarea
-            class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-            id="message"
-            placeholder="Enter your message"
-            rows="4"
-          ></textarea>
-        </div>
-        <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-8">
-          Submit
-        </button>
-      </div>
-    </div>
-  </section>
-</div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
